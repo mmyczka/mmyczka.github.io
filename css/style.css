@@ -1,0 +1,38 @@
+body {
+  background: #348fd4;
+  font-family: Georgia;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 70px;
+  font-weight: normal;
+  margin: 0;
+  font-family: Georgia;
+}
+
+a, a:visited {
+  font-size: 50px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.scrollblock {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.block-scala {}
+.block-scala a {color: #fff; background-color: #06406c; padding: 10px 15px; border-radius: 10px;}
+.block-scala a:hover {text-decoration: underline;}
