@@ -6,10 +6,10 @@
     <title>Scala Code Snippet in Dark Mode</title>
 
     <!-- Link to highlight.js styles (dark theme) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <!-- Link to highlight.js library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
     <script>
         // Initialize highlighting once the document is loaded
@@ -20,15 +20,24 @@
 </head>
 <body>
     <!-- Scala code snippet -->
-    <pre><code class="scala code">
+	<pre><code class="scala zone code-block1">
+/* map */
 val list = List(1, 2, 3, 4, 5)  
 def timesTwo(i: Int) = i * 2
 
-list.map(x => timesTwo(x))  // : List[Int] = List(2, 4, 6, 8, 10)        
-list.map(timesTwo(_))       // : List[Int] = List(2, 4, 6, 8, 10)
-list.map(timesTwo)          // : List[Int] = List(2, 4, 6, 8, 10)
-list map timesTwo           // : List[Int] = List(2, 4, 6, 8, 10)
-    </code></pre>
+list.map(x => timesTwo(x)) //* : List[Int] = List(2, 4, 6, 8, 10)
+list.map(timesTwo(_))      //* : List[Int] = List(2, 4, 6, 8, 10)
+list.map(timesTwo)         //* : List[Int] = List(2, 4, 6, 8, 10)
+list map timesTwo          //* : List[Int] = List(2, 4, 6, 8, 10)
+	</code></pre>
+	<pre><code class="scala zone code-block2">
+/* tuple */
+new Tuple2[Int, String](4, "scala") //* : (Int, String) = (4, "scala")
+new Tuple2(4, "scala")              //* : (Int, String) = (4, "scala")
+Tuple2(4, "scala")                  //* : (Int, String) = (4, "scala")
+(4, "scala")                        //* : (Int, String) = (4, "scala")
+4 -> "scala"                        //* : (Int, String) = (4, "scala")
+	</code></pre>
     <a href="../index.html">Back to scala:</a>
 </body>
 </html>

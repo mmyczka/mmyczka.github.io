@@ -37,4 +37,36 @@ a:hover {
 .block-scala a {color: #fff; background-color: #06406c; padding: 10px 15px; border-radius: 10px;}
 .block-scala a:hover {text-decoration: underline;}
 
-.code {font-size: 35px; text-align: left;}
+.zone {font-size: 35px; text-align: left; margin = 0; padding = 0}
+
+pre.code {
+    overflow: hidden;
+}
+
+pre {
+    margin: 0;
+    overflow-x: auto;    /* This will add horizontal scrolling if the content overflows horizontally */
+    overflow-y: hidden;  /* This will prevent vertical scrolling */
+    white-space: pre-wrap; /* This will wrap long lines, avoiding horizontal scrolling */
+}
+
+.code-block1 {
+    background-color: #282c34;
+}
+
+.code-block2 {
+    background-color: #1e2127;
+}
+
+.code-block3 {
+    background-color: #1a1d23;
+}
+
+.code-block4 {
+    background-color: #2e323b;
+}
+
+.code-block5 {
+    background-color: #23262c;
+}
+
