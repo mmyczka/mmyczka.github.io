@@ -7,7 +7,7 @@
 
     <!-- Link to highlight.js styles (dark theme) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
-
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
     <!-- Link to highlight.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
 
@@ -20,14 +20,16 @@
 </head>
 <body>
     <!-- Scala code snippet -->
-    <pre><code class="scala">
-object HelloWorld {
-  def main(args: Array[String]): Unit = {
-    println("Hello, world!")
-  }
-}
+    <pre><code class="scala code">
+val list = List(1, 2, 3, 4, 5)  
+def timesTwo(i: Int) = i * 2
+
+list.map(x => timesTwo(x))  // : List[Int] = List(2, 4, 6, 8, 10)        
+list.map(timesTwo(_))       // : List[Int] = List(2, 4, 6, 8, 10)
+list.map(timesTwo)          // : List[Int] = List(2, 4, 6, 8, 10)
+list map timesTwo           // : List[Int] = List(2, 4, 6, 8, 10)
     </code></pre>
-    <a href="../index.html">Back to Home</a>
-</body>stylesheet
+    <a href="../index.html">Back to scala:</a>
+</body>
 </html>
 

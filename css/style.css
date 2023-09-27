@@ -36,3 +36,5 @@ a:hover {
 .block-scala {}
 .block-scala a {color: #fff; background-color: #06406c; padding: 10px 15px; border-radius: 10px;}
 .block-scala a:hover {text-decoration: underline;}
+
+.code {font-size: 35px; text-align: left;}
