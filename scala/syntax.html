@@ -38,6 +38,19 @@ Tuple2(4, "scala")                  //* : (Int, String) = (4, "scala")
 (4, "scala")                        //* : (Int, String) = (4, "scala")
 4 -> "scala"                        //* : (Int, String) = (4, "scala")
 	</code></pre>
+	<pre><code class="scala zone code-block3">
+/* map/flatMap vs for-comprehension */
+val listA = List(1, 2)
+val listB = List(4, 5)
+
+listA.flatMap(a => listB.map(a * _)) //* : List[Int] = List(4, 5, 8, 10)
+
+for {
+  a <- listA
+  b <- listB
+} yield (a * b)                      //* : List[Int] = List(4, 5, 8, 10)
+
+	</code></pre>
     <a href="../index.html">Back to scala:</a>
 </body>
 </html>
