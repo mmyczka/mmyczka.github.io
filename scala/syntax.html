@@ -51,6 +51,23 @@ for {
 } yield (a * b)                      //* : List[Int] = List(4, 5, 8, 10)
 
 	</code></pre>
+		<pre><code class="scala zone code-block4">
+/* foldLeft */
+val list = List(1, 2, 3, 4, 5)
+def adder(acc: Int, i: Int): Int = acc + i
+
+list.foldLeft(0)((acc, x) => adder(acc, x))   //* : Int = 15
+list.foldLeft(0)((acc, x) => acc + x)         //* : Int = 15
+list.foldLeft(0)(adder(_, _))                 //* : Int = 15
+list.foldLeft(0)(_ + _)                       //* : Int = 15
+list.foldLeft(0)(adder)                       //* : Int = 15
+(list foldLeft 0)(adder)                      //* : Int = 15
+(0 /: list)(adder)                            //* : Int = 15
+//(method /: is deprecated)
+	</code></pre>
+	
+	
+	
     <a href="../index.html">Back to scala:</a>
 </body>
 </html>
