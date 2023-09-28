@@ -67,7 +67,7 @@ list.foldLeft(0)(adder)                       //* : Int = 15
 //(method /: is deprecated)
 	</code></pre>
 		
-		<pre><code class="scala zone code-block5">
+	<pre><code class="scala zone code-block5">
 /* foldRight */
 val list = List(1, 2, 3, 4, 5)
 def adder(i: Int, acc: Int): Int = acc + i
@@ -82,9 +82,22 @@ list.foldRight(0)(adder)                       //* : Int = 15
 //(method :\ is deprecated)
 	</code></pre>
 	
+	<pre><code class="scala zone code-block1">
+/* foldLeft vs foldRight */
+val list = List(1, 2, 3, 4, 5)
+
+list.foldLeft("")((acc, x) => acc + x.toString)  //* : String = "12345"
+list.foldRight("")((x, acc) => acc + x.toString) //* : String = "54321"
+
+val nilInt = List[Int]()
+list.foldLeft(nilInt)(_ :+ _)  //* : List[Int] = List(1, 2, 3, 4, 5)
+list.foldRight(nilInt)(_ :: _) //* : List[Int] = List(1, 2, 3, 4, 5)
+	</code></pre>
 	
 	
     <a href="../index.html">Back to scala:</a>
 </body>
 </html>
+
++
 
