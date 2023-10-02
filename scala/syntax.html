@@ -99,16 +99,13 @@ list.foldRight(nilInt)(_ :: _) //* : List[Int] = List(1, 2, 3, 4, 5)
 /* case */
 val pairs = List((1, "one"), (2, "two"), (3, "three"))
 
-pairs.map {case (number, _) => (number *2)} //* : List[Int] = List(2, 4, 6)
-pairs.map {case pair => (pair._1 *2)}       //* : List[Int] = List(2, 4, 6)
-pairs.map {pair => (pair._1 *2)}            //* : List[Int] = List(2, 4, 6)
-pairs.map {_._1 *2}                         //* : List[Int] = List(2, 4, 6)
+pairs.map {case (nbr, _) => (nbr *2)} //* : List[Int] = List(2, 4, 6)
+pairs.map {case pair => (pair._1 *2)} //* : List[Int] = List(2, 4, 6)
+pairs.map {pair => (pair._1 *2)}      //* : List[Int] = List(2, 4, 6)
+pairs.map {_._1 *2}                   //* : List[Int] = List(2, 4, 6)
 	</code></pre>
 	
 	
     <a href="../index.html">Back to scala:</a>
 </body>
 </html>
-
-+
-
