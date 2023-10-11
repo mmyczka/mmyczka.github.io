@@ -37,7 +37,7 @@ a:hover {
 .block-scala a {color: #fff; background-color: #06406c; padding: 10px 15px; border-radius: 10px;}
 .block-scala a:hover {text-decoration: underline;}
 
-.zone {font-size: 35px; text-align: left; margin = 0; padding = 0}
+.zone {font-size: 25px; text-align: left; margin = 0; padding = 0}
 
 pre.code {
     overflow: hidden;
