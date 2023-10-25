@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages with Plotly</title>
+    <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 20%;
+        background-color: #f0f0f0;
+        padding: 20px;
+        float: left;
+        height: 100%;
+    }
+
+    .content {
+        padding: 20px;
+        overflow: hidden; /* Clear the float from the sidebar */
+        height: 100%;
+    }
+
+    #graph-iframe {
+        width: 100%;
+        height: calc(100% - 40px); /* Subtract 40px for the padding in .content */
+        border: none; /* Remove the iframe border */
+    }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Graphs List</h2>
+        <ul>
+            <li><a href="graphs/population.html" target="graph-iframe">World Population</a></li>
+            <li><a href="graphs/Poland_population.html" target="graph-iframe">Poland Population</a></li>
+            <!-- Add more graph links here -->
+        </ul>
+    </div>
+    <div class="content">
+        <iframe id="graph-iframe" name="graph-iframe" src="graph1.html"></iframe>
+    </div>
+</body>
+</html>
