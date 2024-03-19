@@ -1,88 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="with=device-widht, initial-scale=1.0">
-        <title>My Tools</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            .site-content{
-                width: 70%;
-                margin: 0 auto;
-            }
-            .container {
-                display: flex;
-                justify-content: space-between;
-                padding: 5px;
-            }
-            .column {
-                flex-basis: 33%;
-                padding: 10px;
-                align-items: center;
-                margin-right: 10px;
-                position: relative;
-            }
-            .column img {
-                width: 100%;
-                height: auto;
-                display: block;
-                margin-bottom: 25px;
-            }
-            h1{
-                text-align: center;
-                margin-top: 50px;}
-            .image-container {
-                position: relative;
-            }
-            .image-container img{
-                display: block;
-                width: 100%;
-                height: auto;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMy Space</title>
+    <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="elegant_font/HTML CSS/style.css" />
+</head>
+<body>
 
-            .image-text{
-               position: absolute;
-               bottom: 10px;
-               left: 10px;
-               transform:translateX(-20%);
-               background-color: rgba(0,0,0,0.7);
-               color: white;
-               padding: 5px 10px;
-               font-size: 14px;
-               border-radius: 5px;
-            }
+<div class="container">
 
-        </style>
-    </head>
-    <body>
-        <div class="site-content">
-        <h1>Welcome to My Tools</h1>
-        <div class="container">
-            <div class="column">
-                <div class="image-container">
-                    <a href="tools/ascii/ascii.html">
-                        <img src="img/ascii.png" alt="ascii">
-                        <div class="image-text">ASCII &#8226; HTML &#8226; CSS</div>
-                    </a>
-                </div>
-                    <img src="https://via.placeholder.com/200x200" alt="Image2">
-                    <img src="https://via.placeholder.com/200x400" alt="Image3">
-            </div>
-            <div class="column">
-                <img src="img/calculator.png" alt="Image4">
-                <img src="https://via.placeholder.com/200x200" alt="Image5">
-                <img src="https://via.placeholder.com/200x300" alt="Image6">
-            </div>
-            <div class="column">
-                <img src="https://via.placeholder.com/200x300" alt="Image7">
-                <img src="https://via.placeholder.com/200x400" alt="Image8">
-                <img src="https://via.placeholder.com/200x200" alt="Image9">
-            </div>
-            </div>  
-        </div>
-    </body>
+
+<div class="header">
+    <div class="title">MMy Hub</div>
+    <div class="right-table">
+        <table>
+            <tr>
+				<td>LinkedIn</td>
+                <td>GitHub</td>
+                <td>kaggle</td>
+                <td>YouTube</td>
+            </tr>
+			<tr> <td></td></tr>
+        </table>
+    </div>
+</div>
+
+
+<table>
+    <tr>
+        <td>
+			<a href="ascii/index.html" style="text-decoration: none; color: inherit;">
+				<div data-icon="&#xe056;"></div>
+				<div class="text">
+					<span style="font-weight: bold; font-size: 32px;">ASCII</span><br>
+					ASCII &#8226; HTML &#8226; CSS
+				</div>
+			</a>
+        </td>
+        <td>
+            <div data-icon="&#xe085;"></div>
+            <div class="text">Profile<br>Description 2</div>
+        </td>
+        <td>
+            <div data-icon="&#xe029;"></div>
+            <div class="text">Messages<br>Description 3</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div data-icon="&#xe0e7;"></div>
+            <div class="text">Settings<br>Description 4</div>
+        </td>
+        <td>
+            <div data-icon="&#xe0f2;"></div>
+            <div class="text">Analytics<br>Description 5</div>
+        </td>
+        <td>
+            <div data-icon="&#xe06c;"></div>
+            <div class="text">Private<br>Private links</div>
+        </td>
+    </tr>
+</table>
+
+</div>
+</div>
+</body>
 </html>

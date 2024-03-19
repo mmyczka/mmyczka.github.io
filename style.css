@@ -1,0 +1,89 @@
+body {
+    background-color: #222; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+	font-family: "Arial", Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+	margin-left: 10px;
+	align-items: center; /* Center align vertically */
+}
+
+.right-table {
+	color: #ffc107;
+}
+
+.right-table td {
+    text-align: center;
+    width: 80px;
+    height: 25px;
+    background-color: #222; /* Set background color of table cells */
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.right-table td:hover {
+    font-size: 20px;
+	background-color: #222;
+}
+
+
+/* Additional styles for the title */
+.title {
+    font-size: 42px; /* Adjust the font size */
+	font-weight: 550;
+    color: #ffc107;
+	flex: 1; /* Grow to fill remaining space */
+    padding-right: 220px; /* Spacing between text and table */
+}
+
+table {
+    margin: 0 auto; /* Center the table horizontally */
+    width: 100%; /* Set the width to 80% of the containing element */
+    border-collapse: separate;
+    border-spacing: 10px;	
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    width: 33.33%;
+    height: 250px;
+    background-color: #333; /* Set background color of table cells */
+    position: relative; /* Set position relative for positioning elements inside */
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+[data-icon]:before {
+    font-size: 64px;
+    text-shadow: -10px -10px 1px #444; /* Add box shadow */
+    position: absolute; /* Position the icon absolutely */
+    top: 70px; /* Set distance from top */
+    left: 50%; /* Align icon horizontally */
+    transform: translateX(-50%); /* Center icon horizontally */
+    transition: font-size 0.3s; /* Add transition effect for font size */
+    color: #ffc107;
+}
+
+.text {
+    position: absolute; /* Position the text absolutely */
+    bottom: 50px; /* Set distance from bottom */
+    left: 50%; /* Align text horizontally */
+    transform: translateX(-50%); /* Center text horizontally */
+    transition: color 0.3s; /* Add transition effect for font color */
+}
+
+td:hover {
+    background-color: #555; /* Darken background color on hover */
+}
+
+/* Change font size on hover */
+td:hover [data-icon]:before{
+    font-size: 80px;
+}
