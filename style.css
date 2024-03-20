@@ -9,81 +9,82 @@ body {
     margin: 0 auto;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-	margin-left: 10px;
-	align-items: center; /* Center align vertically */
+.container_table {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item_title {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+}
+  
+.item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+	background-color: #333;
+}
+  
+@media only screen and (max-width: 768px) {
+	.item {
+      width: 100%;
+    }
+	.item_title {
+		width: 100%;
+	}
+}
+
+/* Additional styles for the title */
+.title {
+    font-size: 42px;
+	font-weight: 550;
+    color: #ffc107;
 }
 
 .right-table {
 	color: #ffc107;
+	width: 100%;
 }
 
 .right-table td {
-    text-align: center;
-    width: 80px;
-    height: 25px;
-    background-color: #222; /* Set background color of table cells */
-    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+	text-align: right;
+	width: 25%;
+	height: 25px;
 }
 
 .right-table td:hover {
     font-size: 20px;
-	background-color: #222;
 }
 
-
-/* Additional styles for the title */
-.title {
-    font-size: 42px; /* Adjust the font size */
-	font-weight: 550;
-    color: #ffc107;
-	flex: 1; /* Grow to fill remaining space */
-    padding-right: 220px; /* Spacing between text and table */
-}
-
-table {
-    margin: 0 auto; /* Center the table horizontally */
-    width: 100%; /* Set the width to 80% of the containing element */
-    border-collapse: separate;
-    border-spacing: 10px;	
-}
-
-td {
-    padding: 10px;
-    text-align: center;
-    width: 33.33%;
-    height: 250px;
-    background-color: #333; /* Set background color of table cells */
-    position: relative; /* Set position relative for positioning elements inside */
-    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
-}
 
 [data-icon]:before {
     font-size: 64px;
     text-shadow: -10px -10px 1px #444; /* Add box shadow */
-    position: absolute; /* Position the icon absolutely */
-    top: 70px; /* Set distance from top */
-    left: 50%; /* Align icon horizontally */
-    transform: translateX(-50%); /* Center icon horizontally */
-    transition: font-size 0.3s; /* Add transition effect for font size */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    transition: font-size 0.3s, color 0.3s;
     color: #ffc107;
+	height: 80px;
+	padding:20px;
 }
 
 .text {
-    position: absolute; /* Position the text absolutely */
-    bottom: 50px; /* Set distance from bottom */
-    left: 50%; /* Align text horizontally */
-    transform: translateX(-50%); /* Center text horizontally */
-    transition: color 0.3s; /* Add transition effect for font color */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 0px;
 }
 
-td:hover {
-    background-color: #555; /* Darken background color on hover */
+.item:hover {
+    background-color: #555;
 }
 
 /* Change font size on hover */
-td:hover [data-icon]:before{
+.item:hover [data-icon]:before{
     font-size: 80px;
 }
